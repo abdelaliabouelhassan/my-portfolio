@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [PortfolioController::class,'index']);
+Route::post('/contact', [PortfolioController::class,'contact']);
+Route::get('/my-work/{slug}', [PortfolioController::class,'show']);
+
+//DOWNLOAD CV
+
+Route::get('/download-cv', function () {
+    return response()->download(public_path('cv/CV-Abdelali-Abouelhassan.pdf'));
 });

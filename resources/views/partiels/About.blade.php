@@ -90,6 +90,28 @@
           <p class="mb-0">Happy Clients</p>
         </div>
       </div>
+       <!--  Client  -->
+       <div class="testimonial mt-5">
+        <div class="owl-carousel">
+          <!-- Item 01 -->
+          @foreach ($reviews as  $review)
+          <div class="testimonial-box">
+            <p class="testimonial-comment">"{{$review->review}}"</p>
+            <div class="testimonial-item">
+              <div class="testimonial-image">
+                <img src="{{$review->image ? config('app.S3_URL') . $review->image : '' }}" alt="/">
+              </div>
+              <div class="testimonial-info">
+                <p class="mb-0">{{$review->name}}</p>
+                <small class="testimonial-jub">{{$review->country}}</small>
+              </div>
+            </div>
+          </div>
+          @endforeach
+          
+          
+        </div>
+      </div>
       <!--  Skills  -->
       <div class="skills">
         <div class="row pt-5">
@@ -414,49 +436,6 @@
           </div>
         </div>
       </div>
-      <!--  Client  -->
-      <div class="testimonial mt-5">
-        <div class="owl-carousel">
-          <!-- Item 01 -->
-          <div class="testimonial-box">
-            <p class="testimonial-comment">"My motivation is customer satisfaction. Trust me and trust your growth asset management to my expertise gained over the years. My goal is continuous achievement.!"</p>
-            <div class="testimonial-item">
-              <div class="testimonial-image">
-                <img src="https://via.placeholder.com/125x125" alt="/">
-              </div>
-              <div class="testimonial-info">
-                <p class="mb-0">Leo Anderson</p>
-                <small class="testimonial-jub">Web Designer</small>
-              </div>
-            </div>
-          </div>
-          <!-- Item 02 -->
-          <div class="testimonial-box">
-            <p class="testimonial-comment">"My motivation is customer satisfaction. Trust me and trust your growth asset management to my expertise gained over the years. My goal is continuous achievement.!"</p>
-            <div class="testimonial-item">
-              <div class="testimonial-image">
-                <img src="https://via.placeholder.com/125x125" alt="/">
-              </div>
-              <div class="testimonial-info">
-                <p class="mb-0">Hanah Smith</p>
-                <small class="testimonial-jub">Web Developer</small>
-              </div>
-            </div>
-          </div>
-          <!-- Item 03 -->
-          <div class="testimonial-box">
-            <p class="testimonial-comment">"My motivation is customer satisfaction. Trust me and trust your growth asset management to my expertise gained over the years. My goal is continuous achievement.!"</p>
-            <div class="testimonial-item">
-              <div class="testimonial-image">
-                <img src="https://via.placeholder.com/125x125" alt="/">
-              </div>
-              <div class="testimonial-info">
-                <p class="mb-0">Angela Anderson</p>
-                <small class="testimonial-jub">Web Designer</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   </section>

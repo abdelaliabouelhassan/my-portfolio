@@ -11,21 +11,34 @@
             <a href="javascript:void(0)" data-filter="*" class="active">All</a>
           </li>
           <li class="list-inline-item">
-            <a href="javascript:void(0)" data-filter=".webdesign">Web Design</a>
+            <a href="javascript:void(0)" data-filter=".Web">Web Applications</a>
           </li>
           <li class="list-inline-item">
-            <a href="javascript:void(0)" data-filter=".mobiledesign">Mobile Design</a>
+            <a href="javascript:void(0)" data-filter=".Mobile">Mobile Applications</a>
           </li>
-          <li class="list-inline-item">
-            <a href="javascript:void(0)" data-filter=".sound">Sound</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="javascript:void(0)" data-filter=".graphic">Graphic</a>
-          </li>
+         
         </ul>
       </div>
       <div class="portfolio-items border-line-v row">
-        <!-- Item 01 -->
+        @foreach ($myWorks as $myWorks )
+        <div class="col-md-6 col-lg-4 portfolio-item {{$myWorks->category}}">
+          <a href="/my-work/{{ $myWorks->slug}}" class="portfolio-box">
+            <div class="portfolio-image">
+              <img src="{{config('app.S3_URL') .  $myWorks->image}}" alt="/">
+              <div class="portfolio-icon">
+                <span class="ajax-page-load">
+                  <i class="bi bi-file-earmark-text"></i>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h6 class="blog-header">{{$myWorks->title}}</h6>
+              <p class="mb-0">image</p>
+            </div>
+          </a>
+        </div>
+        @endforeach
+        {{-- <!-- Item 01 -->
         <div class="col-md-6 col-lg-4 portfolio-item sound">
           <div class="portfolio-box">
             <div class="portfolio-image">
@@ -120,7 +133,7 @@
             <h6 class="blog-header">Detailed Project 2</h6>
             <p class="mb-0">image</p>
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
   </section>

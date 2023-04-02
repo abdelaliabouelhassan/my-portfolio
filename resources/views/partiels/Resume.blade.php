@@ -129,11 +129,13 @@
             <div class="col-md-6">
               <div class="timeline-box">
                 <div class="time-line-header">
-                  <p class="timeline-year">2017 - 2018</p>
-                  <h6 class="timeline-title">Team Leader</h6>
+                  <p class="timeline-year">2020 - CURRENT</p>
+                  <h6 class="timeline-title">Freelancing</h6>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare.</p>
+                  <p>
+                    With my experience as a seller level 2 on Fiverr and rising talent on Upwork, I have established myself as a trusted and reliable freelancer in the web & mobile development industry. I have helped clients from all over the world to create professional and high-performing projects, and have received positive feedback for my attention to detail and commitment to delivering quality work on time.
+                  </p>
                 </div>
               </div>
             </div>
@@ -141,11 +143,13 @@
             <div class="col-md-6">
               <div class="timeline-box">
                 <div class="time-line-header">
-                  <p class="timeline-year">2019 - 2021</p>
-                  <h6 class="timeline-title">Business Photographer</h6>
+                  <p class="timeline-year">2021 - 2023</p>
+                  <h6 class="timeline-title">Front-End Engineer at colochousing</h6>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare.</p>
+                  <p>
+                    I led front-end development at Co-living Rooms, a leading co-living marketplace in Europe. My proficiency in Vue.js, Nuxt.js, Tailwind CSS, and JavaScript enabled me to create a seamless user experience, making it effortless for users to find and book co-living spaces. Collaborating closely with back-end developers, I ensured the integration of both systems was smooth. My work was recognized by management, cementing my reputation as a highly skilled and dedicated front-end developer.
+                  </p>
                 </div>
               </div>
             </div>
@@ -153,11 +157,13 @@
             <div class="col-md-6">
               <div class="timeline-box">
                 <div class="time-line-header">
-                  <p class="timeline-year">2019 - 2021</p>
-                  <h6 class="timeline-title">Marketing Managment</h6>
+                  <p class="timeline-year">2022 - 2023</p>
+                  <h6 class="timeline-title">Full-Stack Engineer at RCOS </h6>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare.</p>
+                  <p>
+                    I had the opportunity to work as a full-stack web developer at RCOS Solutions, a Belgian company that offers innovative solutions for hairdressing and beauty professionals. In this role, I was responsible for developing and maintaining the company's web platform, which aimed to provide a seamless experience for hairdressing and beauty professionals
+                  </p>
                 </div>
               </div>
             </div>
@@ -165,11 +171,13 @@
             <div class="col-md-6">
               <div class="timeline-box">
                 <div class="time-line-header">
-                  <p class="timeline-year">2021 - 2021</p>
-                  <h6 class="timeline-title">Advetising</h6>
+                  <p class="timeline-year">2023 - CURRENT</p>
+                  <h6 class="timeline-title">Full-Stack Engineer at ceebig</h6>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare.</p>
+                  <p>
+                    At Ceebig, I served as a full-stack web developer, where I was part of a passionate and innovative team that provided exceptional services to our clients. As a company that focuses on start-up incubation, software engineering, and custom business solutions, I was able to work on diverse projects that required me to leverage my skills in both front-end and back-end development. I collaborated closely with my colleagues to create custom web solutions that met our clients' unique needs, while adhering to the highest standards of quality and performance. Our company culture of promoting innovation, trust, and collaboration helped me to grow both professionally and personally, and I am proud to have been a part of such a dynamic team
+                  </p>
                 </div>
               </div>
             </div>

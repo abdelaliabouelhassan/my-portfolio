@@ -40,11 +40,12 @@
         <div class="col-12 col-xl-7">
           <div class="contact-box">
             <div class="contact-form">
-              <form id="contactForm">
+              <form id="contactForm" onsubmit="contactUs()">
+                @csrf
                 <div class="row">
                   <div class="col-lg-12 form-item">
                     <div class="form-group">
-                      <input name="name" id="name" type="text" class="form-control" placeholder="Complate Name*" required>
+                      <input name="name" id="name" type="text" class="form-control" placeholder="Full Name*" required>
                     </div>
                   </div>
                   <div class="col-lg-12 form-item">
@@ -54,12 +55,12 @@
                   </div>
                   <div class="col-lg-12 form-item">
                     <div class="form-group">
-                      <input name="subject" id="subject" type="tel" class="form-control" placeholder="Phone number*" required>
+                      <input name="subject" id="subject" type="tel" class="form-control" placeholder="Phone number" >
                     </div>
                   </div>
                   <div class="col-12 form-item">
                     <div class="form-group">
-                      <textarea name="comments" id="comments" rows="3" class="form-control textarea" placeholder="Your message..."></textarea>
+                      <textarea name="comments" id="comments" rows="3" class="form-control textarea" placeholder="Your message..." required></textarea>
                     </div>
                   </div>
                   <div class="col-sm-12 text-left">
@@ -73,6 +74,43 @@
             </div>
           </div>
         </div>
+
+
+        <script>
+          function contactUs() {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var tele = document.getElementById('subject').value;
+            var comments = document.getElementById('comments').value;
+            var _token = document.getElementsByName('_token')[0].value;
+            var data = {
+              name: name,
+              email: email,
+              tele: tele,
+              comments: comments,
+              _token: _token
+            }
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/contact', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify(data));
+            xhr.onload = function() {
+              if (xhr.status === 200) {
+                alert('Thank you, Message sent successfully');
+                 //clear form
+                  document.getElementById('name').value = '';
+                  document.getElementById('email').value = '';
+                  document.getElementById('subject').value = '';
+                  document.getElementById('comments').value = '';
+              } else {
+                alert('Message not sent, please try again or contact me directly');
+              }
+
+            }
+          
+          }
+        </script>
       </div>
     </div>
   </section>

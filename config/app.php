@@ -16,6 +16,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'S3_URL' => env('S3_URL', 'https://theboys.s3.eu-west-3.amazonaws.com/'),
 
     /*
     |--------------------------------------------------------------------------

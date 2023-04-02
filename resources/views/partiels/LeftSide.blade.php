@@ -4,7 +4,8 @@
         <img src="{{asset('/images/abdelali.jpg')}}" alt="/">
       </div>
       <h1 class="mt-1">Abdelali A.</h1>
-      <a class="download-cv primary-button d-none d-lg-inline-block" href="javascript:void(0);">Download CV</a>
+      <a class="download-cv primary-button d-none d-lg-inline-block" href="/download-cv">Download CV</a>
+      
       <div class="container d-lg-none d-inline-block">
         <div class="row">
           <div class="col-12 text-center">
@@ -68,3 +69,4 @@
       </div>
     </div>
   </div>
+
