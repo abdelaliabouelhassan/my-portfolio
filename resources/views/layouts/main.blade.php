@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!--  Color Css  -->
     <link rel="stylesheet" href="{{asset('assets/colors/sky-blue.css')}}">
+    @yield('styles')
   </head>
   <body class="ajax-page-visible max-width-d dark-arshia">
     
@@ -55,5 +56,6 @@
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRemITiP7JRWpZwLhVt-T2x5MeUFE2KWs"></script> -->
     <!--  Arshia Js  -->
     <script src="{{asset('assets/js/arshia.js')}}"></script>
+    @yield('scripts')
   </body>
 </html>

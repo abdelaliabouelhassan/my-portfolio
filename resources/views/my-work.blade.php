@@ -22,6 +22,15 @@
 <meta name="twitter:image" content="{{config('app.S3_URL') .  $myWork->image}}" />
 @endsection
 
+@section('styles')
+@vite('resources/css/app.css')
+@vite('resources/js/app.js')
+
+@endsection
+
+@section('scripts')
+@endsection
+
 @section('content')
     <div id="ajax-page" class="ajax-page-content">
       <div class="single-portfolio-wrapper">
@@ -52,10 +61,10 @@
           <div class="portfolio-page-title">
             <h1>{{$myWork->title}}</h1>
           </div>
-          <div class="row">
+          <div class="row" id="app-boy-stack">
             <div class="col-lg-7 post-content">
-              <div class="single-post">
-                <div class="owl-carousel portfolio-page-carousel">
+              <div>
+                {{-- <div class="owl-carousel portfolio-page-carousel">
                   <!-- Item 01 -->
                   @foreach ($myWork->workImages as $image )
                   <div class="entry-image">
@@ -63,7 +72,23 @@
                   </div>
                   @endforeach
                   
-                </div>
+                </div> --}}
+                @php
+                  $index = 0;
+                @endphp
+                <app-photos >
+                
+                  @foreach ($myWork->workImages as $image )
+                  
+                 <a class="gallery-item @if($index != 0) d-none @endif " href="{{config('app.S3_URL') .  $image->image}}">
+                  <img  style="max-width: 42rem;width: 100%;object-fit: cover;"  class="img-responsive" alt="img1" src="{{config('app.S3_URL') .  $image->image}}" />
+                </a>
+                @php
+                 $index ++;
+                @endphp
+                  @endforeach
+     
+                </app-photos>
                 <div class="entry-content">
                   <h2>Project Overview</h2>
                   <p class="mb-0">
