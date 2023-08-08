@@ -99,7 +99,7 @@
             <p class="testimonial-comment">"{{$review->review}}"</p>
             <div class="testimonial-item">
               <div class="testimonial-image">
-                <img src="{{$review->image ? config('app.S3_URL') . $review->image : '' }}" alt="/">
+                <img src="{{$review->image ? config('app.S3_URL') . $review->image : 'https://api.dicebear.com/6.x/initials/svg?seed=' . $review->name }}" alt="/">
               </div>
               <div class="testimonial-info">
                 <p class="mb-0">{{$review->name}}</p>
